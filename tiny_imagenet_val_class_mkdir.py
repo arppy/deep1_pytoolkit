@@ -27,3 +27,4 @@ for img, folder in val_img_dict.items():
         os.makedirs(newpath)
     if os.path.exists(os.path.join(val_img_dir, img)):
         os.rename(os.path.join(val_img_dir, img), os.path.join(newpath, img))
+os.rmdir(val_img_dir)
