@@ -1,7 +1,7 @@
 import os
 
 DATA_PATH = '../res/data/'
-TINY_IMAGENET_VALID = DATA_PATH+'tiny-imagenet-200/valid'
+TINY_IMAGENET_VALID = DATA_PATH+'tiny-imagenet-200/val'
 
 # Create separate validation subfolders for the validation images based on
 # their labels indicated in the val_annotations txt file
