@@ -22,7 +22,7 @@ fp.close()
 # Create subfolders (if not present) for validation images based on label,
 # and move images into the respective folders
 for img, folder in val_img_dict.items():
-    newpath = (os.path.join(val_img_dir, folder))
+    newpath = (os.path.join(TINY_IMAGENET_VALID, folder))
     if not os.path.exists(newpath):
         os.makedirs(newpath)
     if os.path.exists(os.path.join(val_img_dir, img)):
